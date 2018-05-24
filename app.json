@@ -1,0 +1,29 @@
+{
+    "env": {
+        "ADMIN_USER": {
+            "description": "管理者ユーザID",
+            "value": "admin"
+        },
+        "ADMIN_PASS": {
+            "description": "管理者パスワード"
+        },
+        "ADMIN_MAIL": {
+            "description": "管理者メールアドレス"
+        },
+        "PGOPTIONS": {
+            "description": "Postgresスキーマ名",
+            "value": "-c search_path=目的のスキーマ"
+        },
+        "SHOP_NAME": {
+            "description": "式場名"
+        },
+        "AUTH_MAGIC": {
+            "description": "Auth Magicキー"
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/php"
+        }
+    ]
+}
